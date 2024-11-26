@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -771,7 +771,6 @@
 				};
 			};
 			buildConfigurationList = D899CF7A162C5E8400112F49 /* Build configuration list for PBXProject "ZipZap" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -779,6 +778,7 @@
 				en,
 			);
 			mainGroup = D899CF75162C5E8400112F49;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = D899CF83162C5EC100112F49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1034,14 +1034,20 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1051,6 +1057,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1059,14 +1068,20 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1076,13 +1091,19 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		BF8624ED1BB74B1F00C12EEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1092,13 +1113,19 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		BF8624EE1BB74B1F00C12EEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1108,6 +1135,9 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1116,14 +1146,20 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1133,6 +1169,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1141,14 +1180,20 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1158,6 +1203,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1200,7 +1248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -1245,7 +1293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -1258,7 +1306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1266,6 +1317,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1273,7 +1327,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1281,6 +1338,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1288,13 +1348,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = ../ZipZap;
 				INFOPLIST_FILE = "ZipZapTests/ZipZapTests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pixelglow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ZipZapTests;
 				SDKROOT = macosx;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1302,21 +1371,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = ../ZipZap;
 				INFOPLIST_FILE = "ZipZapTests/ZipZapTests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pixelglow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ZipZapTests;
 				SDKROOT = macosx;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		D899CFD1162C5EEC00112F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1326,14 +1406,19 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		D899CFD2162C5EEC00112F49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-fno-exceptions",
@@ -1343,6 +1428,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1351,6 +1439,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1358,7 +1447,13 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1368,6 +1463,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1376,6 +1474,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 23.6;
 				DYLIB_COMPATIBILITY_VERSION = 8;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1383,7 +1482,13 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				INFOPLIST_FILE = ZipZap/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1393,6 +1498,9 @@
 				PRODUCT_NAME = ZipZap;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
